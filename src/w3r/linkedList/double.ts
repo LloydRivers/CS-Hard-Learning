@@ -132,6 +132,7 @@ const subway = new _LinkedList<string>();
 subway.addToHead("TimesSquare");
 subway.addToHead("GrandCentral");
 subway.addToHead("CentralPark");
+subway.addToHead("42nd Street");
 
 subway.addToTail("PennStation");
 subway.addToTail("WallStreet");
