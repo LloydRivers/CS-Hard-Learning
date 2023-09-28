@@ -126,20 +126,6 @@ class _LinkedList<T> {
     }
     console.log(`${output}null`);
   }
-
-  static fromValues(...values: string[]) {
-    // Create a new linked list instance
-    const ll = new LinkedList();
-
-    // Loop through the provided values in reverse order
-    for (let i = values.length - 1; i >= 0; i--) {
-      // Insert each value at the head of the linked list
-      ll.addToHead(values[i]);
-    }
-
-    // Return the newly created linked list
-    return ll;
-  }
 }
 
 const subway = new _LinkedList<string>();
