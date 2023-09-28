@@ -118,14 +118,13 @@ class _LinkedList<T> {
   }
 
   printList() {
-    let currentNode = this.head;
-    let output = "<head> ";
-    while (currentNode !== null) {
-      output += currentNode.data + " ";
-      currentNode = currentNode.getNextNode();
+    let output = "";
+    let current = this.head;
+    while (current) {
+      output = `${output}${current.data} -> `;
+      current = current.next;
     }
-    output += "<tail>";
-    console.log(`size: ${this.size}`, output);
+    console.log(`${output}null`);
   }
 
   static fromValues(...values: string[]) {
