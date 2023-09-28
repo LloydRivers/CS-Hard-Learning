@@ -72,7 +72,7 @@ class _LinkedList<T> {
     if (removedHead === this.tail) {
       this.removeTail();
     }
-
+    this.size -= 1;
     return removedHead.data;
   }
   removeTail() {
@@ -85,6 +85,7 @@ class _LinkedList<T> {
     if (removedTail === this.head) {
       this.removeHead();
     }
+    this.size -= 1;
     return removedTail.data;
   }
 
@@ -113,6 +114,7 @@ class _LinkedList<T> {
       nextNode?.setPreviousNode(previousNode);
       previousNode!.setNextNode(nextNode);
     }
+    this.size -= 1;
     return nodeToRemove;
   }
 
