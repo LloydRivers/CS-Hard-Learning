@@ -75,6 +75,7 @@ class _LinkedList<T> {
     this.size -= 1;
     return removedHead.data;
   }
+
   removeTail() {
     const removedTail = this.tail;
     if (!removedTail) return;
@@ -102,7 +103,6 @@ class _LinkedList<T> {
     if (!nodeToRemove) {
       return null;
     }
-
     if (nodeToRemove.data === this.head?.data) {
       this.removeHead();
     } else if (nodeToRemove.data === this.tail?.data) {
@@ -110,7 +110,6 @@ class _LinkedList<T> {
     } else {
       const nextNode = nodeToRemove.getNextNode();
       const previousNode = nodeToRemove.getPreviousNode();
-
       nextNode?.setPreviousNode(previousNode);
       previousNode!.setNextNode(nextNode);
     }
@@ -127,6 +126,20 @@ class _LinkedList<T> {
     }
     output += "<tail>";
     console.log(`size: ${this.size}`, output);
+  }
+
+  static fromValues(...values: string[]) {
+    // Create a new linked list instance
+    const ll = new LinkedList();
+
+    // Loop through the provided values in reverse order
+    for (let i = values.length - 1; i >= 0; i--) {
+      // Insert each value at the head of the linked list
+      ll.addToHead(values[i]);
+    }
+
+    // Return the newly created linked list
+    return ll;
   }
 }
 
