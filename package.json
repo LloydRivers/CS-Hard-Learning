@@ -2,6 +2,9 @@
   "name": "CS-Hard-Learning",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
   "repository": "git@github.com:LloydRivers/CS-Hard-Learning.git",
   "author": "Lloyd Rivers <86473036+LloydRivers@users.noreply.github.com>",
   "license": "MIT",
@@ -9,5 +12,8 @@
     "@types/node": "^20.6.4",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }
