@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest"
   },
   "repository": "git@github.com:LloydRivers/CS-Hard-Learning.git",
   "author": "Lloyd Rivers <86473036+LloydRivers@users.noreply.github.com>",
