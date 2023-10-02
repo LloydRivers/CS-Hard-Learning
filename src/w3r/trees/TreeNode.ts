@@ -26,6 +26,17 @@ class TreeNode<T> {
     console.log(this.data);
     this.children.forEach((child) => child.depthFirstTraversal());
   }
+
+  breadthFirstTraversal() {
+    let queue: TreeNode<T>[] = [this];
+    while (queue.length !== 0) {
+      const current = queue.shift();
+      if (current) {
+        console.log(current.data);
+        queue = queue.concat(current.children);
+      }
+    }
+  }
 }
 
 // 1. Create the root node
@@ -50,4 +61,4 @@ childNode1.addChild(nestedChild1);
 childNode1.addChild(nestedChild2);
 
 // call depthFirstTraversal
-rootNode.depthFirstTraversal();
+console.log(rootNode.depthFirstTraversal());
