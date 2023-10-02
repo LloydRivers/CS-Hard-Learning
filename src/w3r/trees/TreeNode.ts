@@ -21,6 +21,11 @@ class TreeNode<T> {
       this.children.forEach((child) => child.removeChild(childToRemove));
     }
   }
+
+  depthFirstTraversal() {
+    console.log(this.data);
+    this.children.forEach((child) => child.depthFirstTraversal());
+  }
 }
 
 // 1. Create the root node
@@ -43,3 +48,6 @@ const nestedChild2 = new TreeNode<number>(15);
 // 5. Add nested children to childNode1
 childNode1.addChild(nestedChild1);
 childNode1.addChild(nestedChild2);
+
+// call depthFirstTraversal
+rootNode.depthFirstTraversal();
