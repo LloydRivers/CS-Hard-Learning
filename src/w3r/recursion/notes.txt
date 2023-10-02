@@ -1,0 +1,63 @@
+
+3. Write a JavaScript program to get integers in the range (x, y) using recursion.  
+Example : range(2, 9)
+Expected Output : [3, 4, 5, 6, 7, 8]
+Click me to see the solution.
+
+4. Write a JavaScript program to compute the sum of an array of integers.  
+Example : var array = [1, 2, 3, 4, 5, 6]
+Expected Output : 21
+Click me to see the solution.
+
+5. Write a JavaScript program to compute the exponent of a number.  
+Note : The exponent of a number says how many times the base number is used as a factor.
+82 = 8 x 8 = 64. Here 8 is the base and 2 is the exponent.
+Click me to see the solution.
+
+6. Write a JavaScript program to get the first n Fibonacci numbers.  
+Note : The Fibonacci Sequence is the series of numbers: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, . . . Each subsequent number is the sum of the previous two.
+Click me to see the solution.
+
+7. Write a JavaScript program to check whether a number is even or not.  
+Click me to see the solution.
+
+8. Write a JavaScript program for binary search.  
+Sample array : [0,1,2,3,4,5,6]
+console.log(l.br_search(5)) will return '5'
+Click me to see the solution.
+
+9. Write a merge sort program in JavaScript.  
+Sample array : [34,7,23,32,5,62]
+Sample output : [5, 7, 23, 32, 34, 62]
+Click me to see the solution.
+
+10. Write a JavaScript program to check whether a given string is a palindrome or not using recursion.  
+A palindrome is a word, number, phrase, or other sequence of symbols that reads the same backwards as forwards, such as the words madam or racecar, the date/time stamps 11/11/11 11:11 and 02/02/2020, and the sentence: "A man, a plan, a canal - Panama".
+Test Data:
+("madam") -> true
+("abdb") -> false
+("ab") -> false
+(test("a") -> true
+Click me to see the solution.
+
+11. Write a JavaScript program to convert binary number (positive) to decimal number using recursion.  
+Test Data:
+(1) -> "1"
+(0) -> "0"
+(10) -> "1010"
+(101) -> "1100101"
+Click me to see the solution.
+
+12. Write a JavaScript program to search for a given integer in an array of sorted integers using the Binary Search Algorithm and recursion.  
+Test Data:
+([1, 2, 3, 5, 6, 7, 10, 11, 14, 15, 17, 19, 20, 22, 23], 6) -> 4
+([1, 2, 3, 5, 6, 7, 10, 11, 14, 15, 17, 19, 20, 22, 23], 16) -> -1
+Click me to see the solution.
+
+13. A string consists of digits ranging from 2 to 9, inclusive. Write a JavaScript program to get all possible letter combinations that represent the number using recursion.  
+Test Data:
+("12") -> ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"]
+("9") -> ["y", "z"]
+Click me to see the solution.
+
+More to Come !
