@@ -1,3 +1,11 @@
+/*
+Binary Search
+When given a sorted array of data, binary search is a way of searching through that data to find an element in O(log n) time using a divide and conquer approach. It doesn’t require you to look through the entire array in a linear way, which would have a linear big O runtime of O(n).
+
+Binary Search Trees
+Binary search trees are a type of tree data structure with the added condition that each element to the left of a node must be less than that parent node, and each element to the right of a node must be greater than that parent node. Each left and right subtree is also itself a binary search tree, which makes searching for elements more efficient.
+*/
+
 class TreeNode<T> {
   data: T;
   children: TreeNode<T>[];
